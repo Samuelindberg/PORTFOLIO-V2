@@ -1,0 +1,47 @@
+body{
+    background-image: linear-gradient(#0093E9,#80D0C7);
+    height: 150vh;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0093E9;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    opacity: 0.95;
+}
+.presentation-container{
+    transform: translateY(40vh);
+    display: flex;
+}
+.icon-container{
+    padding-right: 10px;
+}
+.icons{
+    width: 2vh;
+}
+.profile-img{
+    width: 30vw;
+    transform: translateY(0.98vh);
+    margin-left: 40px;
+    margin-right: 3vw;
+}
+.presentation-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio{
+    
+    margin:0;
+    font-size: 10vh;
+}
+.name{
+    margin: 0;
+}
