@@ -1,6 +1,6 @@
 body{
-    background-image: linear-gradient(#0093E9,#80D0C7);
-    height: 150vh;
+    
+    height: 100vh;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -9,7 +9,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 4vh;
+    height: 2vw;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: #0093E9;
@@ -27,14 +27,14 @@ body{
     padding-right: 10px;
 }
 .icons{
-    width: 2vh;
+    width: 1.5vw;
 }
 #mail{
     width: 3.5vw;
 }
 .profile-img{
     width: 20vw;
-    transform: translateY(1.5vh);
+    transform: translateY(1.5vw);
     margin-left: 4vw;
     margin-right: 3vw;
     border-radius: 0.5vw;
@@ -49,11 +49,16 @@ body{
 }
 .portfolio{
     margin:0;
-    font-size: 8vh;
+    font-size: 4vw;
 }
 .name{
     margin: 0;
-    font-size: 3vh;
+    font-size: 2vw;
+    font-family: montserrat;
+}
+.in{
+    font-family: montserrat;
+    margin-left: 5px;
 }
 .work{
     background:none;
@@ -79,7 +84,16 @@ body{
 }
 .desc{
     margin: 0;
-    margin-top: 1vw;
-    max-width: 20vw;
+    margin-top: 1.5vw;
+    width: 25vw;
     font-family: montserrat;
+}
+.intro{
+  height:100vh;
+  background-image: linear-gradient(#0093E9,#80D0C7);
+}
+
+.works{
+ height: 98vh;
+ background-image: linear-gradient(#80D0C7,#0093E9);
 }
