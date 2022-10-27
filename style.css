@@ -1,31 +1,34 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-repeat: no-repeat;
-  
-    height: 300vh;
+    background-image: linear-gradient(#0093E9,#80D0C7);
+    height: 100vh;
     padding: 0;
     margin: 0;
-    width: 100vw;
+  
+   
 }
 /* nav properties */
 .nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 2vw;
-    width: 100%;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     color: #0093E9;
     background-color: white;
     position: fixed;
     top: 0;
- 
 }
 
 .icon-container{
+  
     padding-right: 10px;
 }
 .icons{
-    width: 1.5vw;
+    width: 20px;
 }
 #mail{
     width: 3.5vw;
@@ -33,41 +36,30 @@ body{
 
 .in{
     font-family: montserrat;
-    margin-left: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+
 }
 
-/* work button */
-.work{
-    background:none;
-    transform: translateY(3vw);
-    width: 8vw;
-    height: 2vw;
-    border-radius: 1vw;
-    border: 0.1vw solid white;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-}
-.work:hover{
-    background-color: #5ccbf7;
-}
 
 
 /* sections */
 .intro{
+  display: flex;
+ align-items: center;
+ justify-content: center;
   height:100vh;
   background-image: linear-gradient(#0093E9,#80D0C7);
 }
-.presentation-container{
-    transform: translateY(10vw);
+.presentation-container{ 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .works{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black; 
     margin: 0;
     padding: 0;
  height: 100vh;
@@ -79,7 +71,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid black; 
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -91,12 +82,13 @@ body{
 .desc{
     margin: 0;
     margin-top: 1.5vw;
-    width: 25vw;
+    max-width: 400px;
     font-family: montserrat;
+    font-size: vw;
 }
 .profile-img{
-    width: 20vw;
-    transform: translateY(1.5vw);
+    max-width: 300px;
+  
     margin-left: 4vw;
     margin-right: 3vw;
     border-radius: 0.5vw;
@@ -111,21 +103,37 @@ body{
 }
 .portfolio{
     margin:0;
-    font-size: 4vw;
+    font-size: 60px;
 }
 .name{
     margin: 0;
-    font-size: 2vw;
+    font-size: 35px;
     font-family: montserrat;
 }
+.work{
+    background:none;
+    transform: translateY(3vw);
+    width: 120px;
+    height: 40px;
+    border-radius: 14px;
+    border: 0.1vw solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.work:hover{
+    background-color: #5ccbf7;
+}
+
 /* work properties */
 .work-title{
     margin-top: 0;
-    font-size: 3vw;
+    font-size: 50px;
     text-align: center;
 }
 .work-examples{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-right: 0%;
@@ -134,13 +142,13 @@ body{
 .exemples{
     margin: 0;
     padding: 0;
-    width: 30vw;
+    max-width: 100px;
     opacity: 0.4;
     filter: blur(3px);
     border-radius: 0.3vw;
 }
 .work-examples h2{
-  font-size: 2vw;
+  font-size: 40px;
   font-family: montserrat;
 }
 .work1{
@@ -150,8 +158,9 @@ body{
 }
 .myrorna{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+   
 }
 /* education properties */
 .education-title{
@@ -163,13 +172,11 @@ body{
 @media screen and (max-width:480px){
     .presentation-container{
         flex-direction: column;
+        align-items: center;
+        padding:20px;
+        justify-content: center;
     }
     .portfolio{
         margin-top: 2vw;
-    }
-}
-@media screen and(max-width:480px) {
-    .work-examples{
-        flex-direction: column;
     }
 }
