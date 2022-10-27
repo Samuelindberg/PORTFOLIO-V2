@@ -6,6 +6,7 @@ body{
     margin: 0;
     width: 100vw;
 }
+/* nav properties */
 .nav-container{
     display: flex;
     align-items: center;
@@ -19,11 +20,7 @@ body{
     top: 0;
  
 }
-.presentation-container{
-    transform: translateY(10vw);
-    display: flex;
-    justify-content: center;
-}
+
 .icon-container{
     padding-right: 10px;
 }
@@ -32,6 +29,70 @@ body{
 }
 #mail{
     width: 3.5vw;
+}
+
+.in{
+    font-family: montserrat;
+    margin-left: 5px;
+}
+
+/* work button */
+.work{
+    background:none;
+    transform: translateY(3vw);
+    width: 8vw;
+    height: 2vw;
+    border-radius: 1vw;
+    border: 0.1vw solid white;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+.work:hover{
+    background-color: #5ccbf7;
+}
+
+
+/* sections */
+.intro{
+  height:100vh;
+  background-image: linear-gradient(#0093E9,#80D0C7);
+}
+.presentation-container{
+    transform: translateY(10vw);
+    display: flex;
+    justify-content: center;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black; 
+    margin: 0;
+    padding: 0;
+ height: 100vh;
+ background-image: linear-gradient(#80D0C7,#0093E9);
+ font-family: Arial, Helvetica, sans-serif;
+ color: white;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(#0093E9,#80D0C7);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+/* intro properties */
+.desc{
+    margin: 0;
+    margin-top: 1.5vw;
+    width: 25vw;
+    font-family: montserrat;
 }
 .profile-img{
     width: 20vw;
@@ -57,56 +118,7 @@ body{
     font-size: 2vw;
     font-family: montserrat;
 }
-.in{
-    font-family: montserrat;
-    margin-left: 5px;
-}
-.work{
-    background:none;
-    transform: translateY(3vw);
-    width: 8vw;
-    height: 2vw;
-    border-radius: 1vw;
-    border: 0.1vw solid white;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-}
-.work:hover{
-    background-color: #5ccbf7;
-}
-@media screen and (max-width:400px){
-        .presentation-container{
-            flex-direction: column;
-        }
-        .portfolio{
-            margin-top: 2vw;
-        }
-}
-.desc{
-    margin: 0;
-    margin-top: 1.5vw;
-    width: 25vw;
-    font-family: montserrat;
-}
-.intro{
-  height:100vh;
-  background-image: linear-gradient(#0093E9,#80D0C7);
-}
-
-.works{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black; 
-    margin: 0;
-    padding: 0;
- height: 100vh;
- background-image: linear-gradient(#80D0C7,#0093E9);
- font-family: Arial, Helvetica, sans-serif;
- color: white;
-
-}
+/* work properties */
 .work-title{
     margin-top: 0;
     font-size: 3vw;
@@ -125,6 +137,7 @@ body{
     width: 30vw;
     opacity: 0.4;
     filter: blur(3px);
+    border-radius: 0.3vw;
 }
 .work-examples h2{
   font-size: 2vw;
@@ -139,4 +152,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/* education properties */
+.education-title{
+    font-size: 3vw;
+    text-align: center;
+}
+
+/* size optimizing */
+@media screen and (max-width:480px){
+    .presentation-container{
+        flex-direction: column;
+    }
+    .portfolio{
+        margin-top: 2vw;
+    }
+}
+@media screen and(max-width:480px) {
+    .work-examples{
+        flex-direction: column;
+    }
 }
