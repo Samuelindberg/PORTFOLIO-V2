@@ -16,6 +16,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    max-height: 35px;
     font-family: Arial, Helvetica, sans-serif;
     color: #0093E9;
     background-color: white;
@@ -142,9 +143,8 @@ body{
 .exemples{
     margin: 0;
     padding: 0;
-    max-width: 100px;
-    opacity: 0.4;
-    filter: blur(3px);
+    max-width: 700px;
+    
     border-radius: 0.3vw;
 }
 .work-examples h2{
@@ -155,12 +155,27 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 300px;
+    margin-top: 10px;
+}
+.work1 h2{
+    margin:20px;
+    font-size: 20px;
+}
+.myrorna h2{
+    margin:20px;
+    font-size: 20px;
 }
 .myrorna{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-   
+}
+#myrorna{
+    margin-top: 30px;
+}
+.overlay{
+
 }
 /* education properties */
 .education-title{
@@ -175,7 +190,14 @@ body{
         align-items: center;
         padding:20px;
         justify-content: center;
+    
     }
+    
+    .exemples{
+        object-fit: contain;
+        width: 80vw;
+    }
+    
     .portfolio{
         margin-top: 2vw;
     }
