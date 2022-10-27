@@ -95,37 +95,48 @@ body{
 }
 
 .works{
-    border: 1px solid black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    border: 1px solid black; 
     margin: 0;
     padding: 0;
  height: 100vh;
  background-image: linear-gradient(#80D0C7,#0093E9);
  font-family: Arial, Helvetica, sans-serif;
  color: white;
+
 }
 .work-title{
-    margin-top: 5vw;
+    margin-top: 0;
     font-size: 3vw;
+    text-align: center;
 }
 .work-examples{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transform: translateY(2vw);
+    justify-content: space-evenly;
+    margin-right: 0%;
+    padding-right: 0%;
 }
-#work1{
+.exemples{
     margin: 0;
     padding: 0;
-    width: 40vw;
+    width: 30vw;
     opacity: 0.4;
     filter: blur(3px);
 }
-.work1{
-   
+.work-examples h2{
+  font-size: 2vw;
+  font-family: montserrat;
 }
-.work1 h2{
-
+.work1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myrorna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
