@@ -39,7 +39,11 @@ body{
     font-family: montserrat;
     margin-left: 20px;
     font-size: 20px;
-
+    text-decoration: none;
+    color: #0093E9;
+}
+a{
+    text-decoration: none;
 }
 
 
@@ -139,6 +143,7 @@ body{
     justify-content: space-evenly;
     margin-right: 0%;
     padding-right: 0%;
+    object-fit: contain;
 }
 .exemples{
     margin: 0;
