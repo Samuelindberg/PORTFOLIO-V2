@@ -125,12 +125,23 @@ a{
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-auto-columns: 700px auto;
-    grid-template-rows: 500px 500px 500px;
-    grid-template-areas: "cicada";
+   grid-template-columns: 1000px auto auto;
+   grid-template-rows: 100% 100% 100%; 
+   gap:10px;
 }
 #cicada{
-    grid-area: cicada;
+    grid-column-start: 1;
+
+}
+#myrorna{
+    grid-row-start: 2;
+}
+#nft{
+    width: 400px;
+    grid-column-start:2;
+}
+.text{
+    grid-column-start: 3;
 }
 .works img{
     width: 100%;
