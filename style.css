@@ -1,5 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 html{
     scroll-behavior: smooth;
+    transition: 500ms;
 }
 body{
     background-repeat: no-repeat;
@@ -49,38 +54,18 @@ a{
 
 /* sections */
 .intro{
+    padding-top: 100px;
   display: flex;
  align-items: center;
  justify-content: center;
   height:100vh;
+  width: 100vw;
   background-image: linear-gradient(#0093E9,#80D0C7);
 }
 .presentation-container{ 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.works{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
- max-height: 100vh;
- background-image: linear-gradient(#80D0C7,#0093E9);
- font-family: Arial, Helvetica, sans-serif;
- color: white;
-}
-.education{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: linear-gradient(#0093E9,#80D0C7);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
 }
 /* intro properties */
 .desc{
@@ -118,77 +103,38 @@ a{
    
     background:none;
     transform: translateY(3vw);
-    width: 120px;
+    width: 160px;
     height: 40px;
-    border-radius: 14px;
-    border: 0.1vw solid white;
-    color: white;
+    border-radius: 20px;
+    border: none;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #abe7fe;
+    color: #69b1ce;
     font-size: 12px;
 }
 .work:hover{
-    background-color: #5ccbf7;
+    border: 0.1vw solid white;
+    color: white;
+    background-color: transparent;
+   
 }
 
-/* work properties */
-.work-title{
-    margin-top: 60px;
-    font-size: 50px;
-    text-align: center;
-}
-.work-examples{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-right: 0%;
-    padding-right: 0%;
-    object-fit: contain;
-}
-.exemples{
-    margin: 0;
-    padding: 0;
-    max-width: 700px;
-    
-    border-radius: 0.3vw;
-}
-.work-examples h2{
-  font-size: 40px;
-  font-family: montserrat;
-}
-.work1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    margin-top: 10px;
-}
-.work1 h2{
-    margin:20px;
-    font-size: 20px;
-}
-.myrorna h2{
-    margin:20px;
-    font-size: 20px;
-}
-.myrorna{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#myrorna{
-    margin-top: 30px;
-    max-width: 700px;
-}
-.overlay{
+/* work section */
 
+.works{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-auto-columns: 700px auto;
+    grid-template-rows: 500px 500px 500px;
+    grid-template-areas: "cicada";
 }
-/* education properties */
-.education-title{
-    font-size: 3vw;
-    text-align: center;
+#cicada{
+    grid-area: cicada;
 }
-
+.works img{
+    width: 100%;
+}
 /* size optimizing */
 @media screen and (max-width:700px){
     .presentation-container{
@@ -202,7 +148,6 @@ a{
         object-fit: contain;
         width: 80vw;
     }
-    
     .portfolio{
         margin-top: 2vw;
     }
