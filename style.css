@@ -176,6 +176,14 @@ a{
 .works img{
     width: 100%;
 }
+#cicada:hover{
+     opacity: 0.8;
+     transition: 600ms;
+}
+#myrorna:hover{
+    opacity: 0.8;
+    transition: 600ms; 
+}
 /* size optimizing */
 @media screen and (max-width:700px){
     .presentation-container{
