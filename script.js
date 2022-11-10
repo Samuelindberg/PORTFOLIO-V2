@@ -11,3 +11,6 @@ works.myrorna.addEventListener("click",function(website){
 works.cicada.addEventListener("onhover", function(){
    works.cicada.style.border="5px solid red";
 });
+document.getElementById("work").addEventListener("click",function(){
+    window.location.href= "#works-title";
+})
